@@ -142,3 +142,28 @@ body
 {
     margin-top: 0;
 }
+
+@media (max-width: 748px)
+{
+    .container
+    {
+        position: absolute;
+        left: 7%;
+    }
+
+    .show-computer
+    {
+        position: absolute;
+        left: 40%;
+    }
+
+    .alert
+    {
+        font-size: 2em;
+    }
+
+
+
+
+
+}
