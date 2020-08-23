@@ -12,8 +12,8 @@ body
 .game
 {
     background-color: rgb(31, 28, 28);
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 }
 
 .container
@@ -143,13 +143,47 @@ body
     margin-top: 0;
 }
 
-@media (max-width: 748px)
+@media screen and (max-width: 375px)
 {
-    .container
-    {
+    .container{
         position: absolute;
-        left: 7%;
+        left: 9%;
+        width: 240px;
     }
+
+    .choice
+    {
+        width: 80px;
+        height: 80px;
+        margin-right: 38px;
+        
+    }
+
+    .choice:hover
+    {
+        height: 80px;
+        width: 80px;
+    }
+    
+    .media-pic
+    {
+        width: 80px;
+        height: 80px;  
+    }
+
+    .show-computer
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .computer
+    {
+        height: 80px;
+        width: 80px;
+    }
+
+
 
     .show-computer
     {
@@ -159,7 +193,18 @@ body
 
     .alert
     {
-        font-size: 2em;
+        font-size: 1em;
+        margin-top: 40px;
+    }
+    
+    .score
+    {
+        display:none;
+    }
+
+    button > p
+    {
+        font-size: 10px;
     }
 
 
