@@ -119,6 +119,8 @@ function reset()
     document.querySelector("#rock").style.background = "rgb(253, 232, 232)";
     document.querySelector("#paper").style.background = "rgb(253, 232, 232)";
     document.querySelector("#scissors").style.background = "rgb(253, 232, 232)";
+    document.querySelector(".alert").textContent = " " ;
+
     computerChoice = ["rock", "paper", "scissors"];
     playerScore = 0;
     computerScore = 0;

@@ -143,47 +143,31 @@ body
     margin-top: 0;
 }
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 425px)
 {
     .container{
         position: absolute;
-        left: 9%;
-        width: 240px;
+        left: 14%;
+    }
+
+    .media-size
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .media-size:hover
+    {
+        height: 80px;
+        width: 80px;
     }
 
     .choice
     {
-        width: 80px;
-        height: 80px;
+
         margin-right: 38px;
         
     }
-
-    .choice:hover
-    {
-        height: 80px;
-        width: 80px;
-    }
-    
-    .media-pic
-    {
-        width: 80px;
-        height: 80px;  
-    }
-
-    .show-computer
-    {
-        width: 80px;
-        height: 80px;
-    }
-
-    .computer
-    {
-        height: 80px;
-        width: 80px;
-    }
-
-
 
     .show-computer
     {
@@ -205,6 +189,8 @@ body
     button > p
     {
         font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
     }
 
 
