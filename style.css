@@ -161,6 +161,11 @@ body
     {
         font-size: 2em;
     }
+    
+    .score
+    {
+        display: none;
+    }
 
 
 
