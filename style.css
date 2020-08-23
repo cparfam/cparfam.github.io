@@ -12,8 +12,8 @@ body
 .game
 {
     background-color: rgb(31, 28, 28);
-    max-width: 100%;
-    width: 1200px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container
