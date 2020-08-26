@@ -7,116 +7,49 @@ body
 {
     margin: 0;
     text-align: center;
+    overflow-x: hidden;
+    background-color: rgb(31, 28, 28);
 }
 
 .game
 {
-    background-color: rgb(31, 28, 28);
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-board
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.flex-column > p
+{
+    margin: 25px auto;
+    color: blanchedalmond;
+    font-size: 1.6em;
+    margin: 0 auto;
 }
 
 .container
 {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 65%;
-    left: 26%;
+    margin-top: 75px;
+
 
 }
 
-.choice
-{
-    border: solid 1px black;
-    background-color: rgb(253, 232, 232);
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    margin-right: 100px;
-    cursor: pointer;
-    margin-top: 50px;
-}
-
-.choice:hover
-{
-    height: 155px;
-    width: 155px;
-}
-
-
-.start
-{
-    height: 15vh;
-    width: 20vw;
-    border: none;
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    outline: none;
-    border-radius: 10px;
-    background-color: rgb(253, 232, 232);
-    font-size: 2.4em;
-    cursor: pointer;
-}
-
-.reset
-{
-    height: 15vh;
-    width: 20vw;
-    border: none;
-    position: absolute;
-    top: 45%;
-    right: 5%;
-    outline: none;
-    border-radius: 10px;
-    background-color: rgb(253, 232, 232);
-    font-size: 2.2em;
-    cursor: pointer;
-}
-
-
-.hov:hover
-{
-    height: 15.2vh;
-    width: 20.2vw;
-}
-
-
-.show-computer
-{
-    background-color: blanchedalmond;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    position: absolute;
-    top: 12%;
-    left: 44%;
-}
-
-.announcement
-{
-    border: solid 3px white;
-    height: 20vh;
-    width: 40vw;
-    position: absolute;
-    top: 43%;
-    left: 30%;
-}
-
-.alert
-{
-    color: rgb(253, 232, 232);
-    font-size: 3.2em;
-    margin: 30px auto;
-}
-
-.score
+.container-small
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    margin-top: 25px;
+    align-items: center;
 }
 
 .flex-column
@@ -126,75 +59,111 @@ body
     margin: auto 400px;
 }
 
-.flex-column > p
+.computer-choice
 {
-    margin: 25px auto;
-    color: rgb(253, 232, 232);
-    font-size: 1.6em;
+    background-color: blanchedalmond;
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    margin-bottom: 35px;
+    border: solid 5px black;
 }
 
-#computer-score
+.choice
 {
+    border: solid 5px black;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    height: 155px;
+    width: 155px;
+    margin: 35px 25px;
+    cursor: pointer;
     margin-top: 0;
 }
 
-#player-score
+button
 {
-    margin-top: 0;
+    height: 10vh;
+    width: 20vw;
+    border: solid 4px black;
+    outline: none;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    font-size: 2.4em;
+    cursor: pointer;
 }
+
+button > p
+{
+    text-align: center;
+    margin: auto 0;
+}
+
+.announcement
+{
+    border: solid 3px white;
+    width: 37vw;
+    height: 17vh;
+    margin: auto 75px;
+
+}
+
+.alert
+{
+    color: blanchedalmond;
+    font-size: 3.2em;
+    margin: 30px auto;
+}
+
 
 @media screen and (max-width: 425px)
 {
-    .container{
-        position: absolute;
-        left: 14%;
+
+    .computer-choice
+    {
+        margin-top: 50px;
+        width: 150px;
+        height: 150px;
+        border: solid 2px black;
+    }
+
+    .container-small
+    {
+        flex-direction: column;
+    }
+
+    button
+    {
+        width: 80vw;
+        margin: 35px auto;
+    }
+
+    .announcement
+    {
+        width: 99vw;
+        padding: 30px;
     }
 
     .media-size
     {
-        width: 80px;
-        height: 80px;
-    }
-
-    .media-size:hover
-    {
-        height: 80px;
-        width: 80px;
+        height: 100px;
+        width: 100px;
     }
 
     .choice
     {
-
-        margin-right: 38px;
-        
+        border: solid 2px black;
     }
 
-    .show-computer
+    .score-board
     {
         position: absolute;
-        left: 40%;
+        bottom: 2%;
     }
 
-    .alert
+    .flex-column
     {
-        font-size: 1em;
-        margin-top: 40px;
+        margin: auto 75px;;
     }
     
-    .score
-    {
-        display:none;
-    }
-
-    button > p
-    {
-        font-size: 10px;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-
-
-
-
 }
