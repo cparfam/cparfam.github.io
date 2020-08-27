@@ -132,6 +132,11 @@ button > p
         border: solid 2px black;
     }
 
+    .container
+    {
+        margin-top: 10px;
+    }
+
     .container-small
     {
         flex-direction: column;
@@ -163,7 +168,7 @@ button > p
     .score-board
     {
         position: absolute;
-        bottom: 2%;
+        bottom: 8%;
     }
 
     .flex-column
