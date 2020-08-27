@@ -163,7 +163,7 @@ button > p
     .score-board
     {
         position: absolute;
-        bottom: 2%;
+        bottom: 0%;
     }
 
     .flex-column
