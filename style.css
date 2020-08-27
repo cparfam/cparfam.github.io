@@ -17,6 +17,9 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .score-board
@@ -24,6 +27,7 @@ body
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
     
 }
 
@@ -50,6 +54,7 @@ body
     flex-direction: row;
     margin-top: 25px;
     align-items: center;
+    width: 100%;
 }
 
 .flex-column
